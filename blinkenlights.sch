@@ -1,0 +1,489 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title "Blinkenlights LED Backlight"
+Date "2021-09-24"
+Rev "v0.1"
+Comp "Benedikt Spranger"
+Comment1 "SPDX-License-Identifier: CERN-OHL-S-2.0"
+Comment2 "https://ohwr.org/cern_ohl_s_v2.txt"
+Comment3 "To view a copy of this license, visit"
+Comment4 "This work is licensed under the CERN-OHL-S v2"
+$EndDescr
+$Sheet
+S 6000 3000 1000 1000
+U 61C5241B
+F0 "LEDS" 50
+F1 "leds.sch" 50
+F2 "DIN" I L 6000 3500 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J101
+U 1 1 61CFFD46
+P 4400 3500
+F 0 "J101" H 4450 3075 50  0000 C CNN
+F 1 "ESP-01S" H 4450 3166 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4400 3500 50  0001 C CNN
+F 3 "~" H 4400 3500 50  0001 C CNN
+F 4 "Ai-Thinker" H 4400 3500 50  0001 C CNN "Manufacture"
+F 5 "ESP-01S" H 4400 3500 50  0001 C CNN "ManuPart#"
+F 6 "JLCPCB" H 4400 3500 50  0001 C CNN "Distributor"
+F 7 "C503582" H 4400 3500 50  0001 C CNN "DistribPart#"
+F 8 "Module WiFi Modules ROHS" H 4400 3500 50  0001 C CNN "Description"
+F 9 "y" H 4400 3500 50  0001 C CNN "assemble"
+F 10 "C503582" H 4400 3500 50  0001 C CNN "LCSC"
+	1    4400 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J102
+U 1 1 61D013C1
+P 4400 4500
+F 0 "J102" H 4450 4075 50  0000 C CNN
+F 1 "PROG" H 4450 4166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical_SMD" H 4400 4500 50  0001 C CNN
+F 3 "~" H 4400 4500 50  0001 C CNN
+F 4 "BOOMELE(Boom Precision Elec)" H 4400 4500 50  0001 C CNN "Manufacture"
+F 5 "C192300" H 4400 4500 50  0001 C CNN "ManuPart#"
+F 6 "JLCPCB" H 4400 4500 50  0001 C CNN "Distributor"
+F 7 "C192300" H 4400 4500 50  0001 C CNN "DistribPart#"
+F 8 "2.54mm 2 8 Surface Mount Header，Breakaway SMD Pin Header & Female Header ROHS" H 4400 4500 50  0001 C CNN "Description"
+F 9 "y" H 4400 4500 50  0001 C CNN "assemble"
+F 10 "C192300" H 4400 4500 50  0001 C CNN "LCSC"
+	1    4400 4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D02334
+P 4700 4700
+F 0 "#PWR?" H 4700 4450 50  0001 C CNN
+F 1 "GND" H 4705 4527 50  0000 C CNN
+F 2 "" H 4700 4700 50  0001 C CNN
+F 3 "" H 4700 4700 50  0001 C CNN
+	1    4700 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4600 4700 4600
+Wire Wire Line
+	4700 4600 4700 4700
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D02C15
+P 4000 3200
+F 0 "#PWR?" H 4000 3050 50  0001 C CNN
+F 1 "+3V3" H 4015 3373 50  0000 C CNN
+F 2 "" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0001 C CNN
+	1    4000 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D0373D
+P 4700 3700
+F 0 "#PWR?" H 4700 3450 50  0001 C CNN
+F 1 "GND" H 4705 3527 50  0000 C CNN
+F 2 "" H 4700 3700 50  0001 C CNN
+F 3 "" H 4700 3700 50  0001 C CNN
+	1    4700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3700
+Wire Wire Line
+	4100 3300 4000 3300
+Wire Wire Line
+	4000 3300 4000 3200
+Wire Wire Line
+	4600 3300 4800 3300
+Wire Wire Line
+	4800 3300 4800 4300
+Wire Wire Line
+	4600 4300 4800 4300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D048DE
+P 4000 4200
+F 0 "#PWR?" H 4000 4050 50  0001 C CNN
+F 1 "+3V3" H 4015 4373 50  0000 C CNN
+F 2 "" H 4000 4200 50  0001 C CNN
+F 3 "" H 4000 4200 50  0001 C CNN
+	1    4000 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4300 4000 4300
+Wire Wire Line
+	4000 4300 4000 4200
+Wire Wire Line
+	4100 3600 3900 3600
+Wire Wire Line
+	3900 3600 3900 4600
+Wire Wire Line
+	3900 4600 4100 4600
+Text Label 4700 4300 0    50   ~ 0
+RX
+Text Label 3900 4600 0    50   ~ 0
+TX
+$Comp
+L Connector_Generic:Conn_01x02 J104
+U 1 1 61D056F1
+P 3800 5500
+F 0 "J104" H 3718 5175 50  0000 C CNN
+F 1 "PWR" H 3718 5266 50  0000 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree" H 3800 5500 50  0001 C CNN
+F 3 "~" H 3800 5500 50  0001 C CNN
+	1    3800 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D068DD
+P 4100 5600
+F 0 "#PWR?" H 4100 5350 50  0001 C CNN
+F 1 "GND" H 4105 5427 50  0000 C CNN
+F 2 "" H 4100 5600 50  0001 C CNN
+F 3 "" H 4100 5600 50  0001 C CNN
+	1    4100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J103
+U 1 1 61D06D69
+P 6200 5400
+F 0 "J103" H 6280 5442 50  0000 L CNN
+F 1 "serial" H 6280 5351 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6200 5400 50  0001 C CNN
+F 3 "~" H 6200 5400 50  0001 C CNN
+	1    6200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D07F26
+P 5900 5600
+F 0 "#PWR?" H 5900 5350 50  0001 C CNN
+F 1 "GND" H 5905 5427 50  0000 C CNN
+F 2 "" H 5900 5600 50  0001 C CNN
+F 3 "" H 5900 5600 50  0001 C CNN
+	1    5900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5500 5900 5500
+Wire Wire Line
+	5900 5500 5900 5600
+Wire Wire Line
+	4000 5500 4100 5500
+Wire Wire Line
+	4100 5500 4100 5600
+Wire Wire Line
+	4100 5300 4100 5400
+Wire Wire Line
+	4100 5400 4000 5400
+Wire Wire Line
+	5900 5300 6000 5300
+Wire Wire Line
+	5900 5400 6000 5400
+Text Label 5900 5400 2    50   ~ 0
+RX
+Text Label 5900 5300 2    50   ~ 0
+TX
+$Comp
+L power:+5V #PWR?
+U 1 1 61D09C5E
+P 4100 5300
+F 0 "#PWR?" H 4100 5150 50  0001 C CNN
+F 1 "+5V" H 4115 5473 50  0000 C CNN
+F 2 "" H 4100 5300 50  0001 C CNN
+F 3 "" H 4100 5300 50  0001 C CNN
+	1    4100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 4400 3800 4400
+Wire Wire Line
+	3800 4400 3800 3400
+Wire Wire Line
+	3800 3400 4100 3400
+Wire Wire Line
+	4100 4500 3700 4500
+Wire Wire Line
+	3700 4500 3700 3500
+Wire Wire Line
+	3700 3500 4100 3500
+Wire Wire Line
+	4600 3400 4900 3400
+Wire Wire Line
+	4900 3400 4900 4400
+Wire Wire Line
+	4900 4400 4600 4400
+Wire Wire Line
+	4600 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 4500
+Wire Wire Line
+	5000 4500 4600 4500
+Wire Wire Line
+	6000 3500 5000 3500
+Connection ~ 5000 3500
+Text Label 5850 3500 0    50   ~ 0
+IO2
+Text Label 4650 3400 0    50   ~ 0
+IO0
+$Comp
+L Regulator_Linear:AZ1117-3.3 U101
+U 1 1 61D103C9
+P 8000 4700
+F 0 "U101" H 8000 4942 50  0000 C CNN
+F 1 "AZ1117-3.3" H 8000 4851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 8000 4950 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 8000 4700 50  0001 C CNN
+F 4 "Advanced Monolithic Systems" H 8000 4700 50  0001 C CNN "Manufacture"
+F 5 "AMS1117-3.3" H 8000 4700 50  0001 C CNN "ManuPart#"
+F 6 "JLCPCB" H 8000 4700 50  0001 C CNN "Distributor"
+F 7 "C6186" H 8000 4700 50  0001 C CNN "DistribPart#"
+F 8 "15V 1.3V @ 800mA - - Fixed 3.3V SOT-223 Linear Voltage Regulators (LDO) ROHS" H 8000 4700 50  0001 C CNN "Description"
+F 9 "y" H 8000 4700 50  0001 C CNN "assemble"
+	1    8000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D126B1
+P 8000 5100
+F 0 "#PWR?" H 8000 4850 50  0001 C CNN
+F 1 "GND" H 8005 4927 50  0000 C CNN
+F 2 "" H 8000 5100 50  0001 C CNN
+F 3 "" H 8000 5100 50  0001 C CNN
+	1    8000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 5000 8000 5100
+$Comp
+L Device:C C101
+U 1 1 61D13774
+P 7500 4950
+F 0 "C101" H 7615 4996 50  0000 L CNN
+F 1 "22µ" H 7615 4905 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 7538 4800 50  0001 C CNN
+F 3 "~" H 7500 4950 50  0001 C CNN
+F 4 "CEC(Shenzhen Zhenhua XinYun Elec)" H 7500 4950 50  0001 C CNN "Manufacture"
+F 5 "CA45-B-16V-22uF-K" H 7500 4950 50  0001 C CNN "ManuPart#"
+F 6 "JLCPCB" H 7500 4950 50  0001 C CNN "Distributor"
+F 7 "C129568" H 7500 4950 50  0001 C CNN "DistribPart#"
+F 8 "5Ω 100kHz 22uF -55℃~+125℃ 16V ±10% CASE-B_3528 Tantalum Capacitors ROHS" H 7500 4950 50  0001 C CNN "Description"
+F 9 "y" H 7500 4950 50  0001 C CNN "assemble"
+F 10 "C129568" H 7500 4950 50  0001 C CNN "LCSC"
+	1    7500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D148EB
+P 7500 5200
+F 0 "#PWR?" H 7500 4950 50  0001 C CNN
+F 1 "GND" H 7505 5027 50  0000 C CNN
+F 2 "" H 7500 5200 50  0001 C CNN
+F 3 "" H 7500 5200 50  0001 C CNN
+	1    7500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D14CF7
+P 8500 5200
+F 0 "#PWR?" H 8500 4950 50  0001 C CNN
+F 1 "GND" H 8505 5027 50  0000 C CNN
+F 2 "" H 8500 5200 50  0001 C CNN
+F 3 "" H 8500 5200 50  0001 C CNN
+	1    8500 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4700 8500 4700
+Wire Wire Line
+	8500 4700 8500 4800
+Wire Wire Line
+	8500 5100 8500 5200
+Wire Wire Line
+	7700 4700 7500 4700
+Wire Wire Line
+	7500 4700 7500 4800
+Wire Wire Line
+	7500 5100 7500 5200
+Wire Wire Line
+	7500 4600 7500 4700
+Connection ~ 7500 4700
+Wire Wire Line
+	8500 4600 8500 4700
+Connection ~ 8500 4700
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61D18360
+P 8500 4600
+F 0 "#PWR?" H 8500 4450 50  0001 C CNN
+F 1 "+3V3" H 8515 4773 50  0000 C CNN
+F 2 "" H 8500 4600 50  0001 C CNN
+F 3 "" H 8500 4600 50  0001 C CNN
+	1    8500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61D18945
+P 7500 4600
+F 0 "#PWR?" H 7500 4450 50  0001 C CNN
+F 1 "+5V" H 7515 4773 50  0000 C CNN
+F 2 "" H 7500 4600 50  0001 C CNN
+F 3 "" H 7500 4600 50  0001 C CNN
+	1    7500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61D190E9
+P 4100 5400
+F 0 "#FLG?" H 4100 5475 50  0001 C CNN
+F 1 "PWR_FLAG" V 4100 5528 50  0000 L CNN
+F 2 "" H 4100 5400 50  0001 C CNN
+F 3 "~" H 4100 5400 50  0001 C CNN
+	1    4100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61D19619
+P 4100 5500
+F 0 "#FLG?" H 4100 5575 50  0001 C CNN
+F 1 "PWR_FLAG" V 4100 5628 50  0000 L CNN
+F 2 "" H 4100 5500 50  0001 C CNN
+F 3 "~" H 4100 5500 50  0001 C CNN
+	1    4100 5500
+	0    1    1    0   
+$EndComp
+Connection ~ 4100 5500
+Connection ~ 4100 5400
+$Comp
+L Device:C C102
+U 1 1 61D19F81
+P 8500 4950
+F 0 "C102" H 8615 4996 50  0000 L CNN
+F 1 "22µ" H 8615 4905 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B" H 8538 4800 50  0001 C CNN
+F 3 "~" H 8500 4950 50  0001 C CNN
+F 4 "CEC(Shenzhen Zhenhua XinYun Elec)" H 8500 4950 50  0001 C CNN "Manufacture"
+F 5 "CA45-B-16V-22uF-K" H 8500 4950 50  0001 C CNN "ManuPart#"
+F 6 "JLCPCB" H 8500 4950 50  0001 C CNN "Distributor"
+F 7 "C129568" H 8500 4950 50  0001 C CNN "DistribPart#"
+F 8 "5Ω 100kHz 22uF -55℃~+125℃ 16V ±10% CASE-B_3528 Tantalum Capacitors ROHS" H 8500 4950 50  0001 C CNN "Description"
+F 9 "y" H 8500 4950 50  0001 C CNN "assemble"
+F 10 "C129568" H 8500 4950 50  0001 C CNN "LCSC"
+	1    8500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H101
+U 1 1 61D46B2F
+P 9500 3900
+F 0 "H101" H 9600 3903 50  0000 L CNN
+F 1 "~" H 9600 3858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 9500 3900 50  0001 C CNN
+F 3 "~" H 9500 3900 50  0001 C CNN
+	1    9500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D474E8
+P 9500 4100
+F 0 "#PWR?" H 9500 3850 50  0001 C CNN
+F 1 "GND" H 9505 3927 50  0000 C CNN
+F 2 "" H 9500 4100 50  0001 C CNN
+F 3 "" H 9500 4100 50  0001 C CNN
+	1    9500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4000 9500 4100
+$Comp
+L Mechanical:MountingHole_Pad H102
+U 1 1 61D48CBE
+P 10000 3900
+F 0 "H102" H 10100 3903 50  0000 L CNN
+F 1 "~" H 10100 3858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 10000 3900 50  0001 C CNN
+F 3 "~" H 10000 3900 50  0001 C CNN
+	1    10000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D48CC4
+P 10000 4100
+F 0 "#PWR?" H 10000 3850 50  0001 C CNN
+F 1 "GND" H 10005 3927 50  0000 C CNN
+F 2 "" H 10000 4100 50  0001 C CNN
+F 3 "" H 10000 4100 50  0001 C CNN
+	1    10000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 4000 10000 4100
+$Comp
+L Mechanical:MountingHole_Pad H103
+U 1 1 61D4C603
+P 9500 4900
+F 0 "H103" H 9600 4903 50  0000 L CNN
+F 1 "~" H 9600 4858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 9500 4900 50  0001 C CNN
+F 3 "~" H 9500 4900 50  0001 C CNN
+	1    9500 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D4C609
+P 9500 5100
+F 0 "#PWR?" H 9500 4850 50  0001 C CNN
+F 1 "GND" H 9505 4927 50  0000 C CNN
+F 2 "" H 9500 5100 50  0001 C CNN
+F 3 "" H 9500 5100 50  0001 C CNN
+	1    9500 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5000 9500 5100
+$Comp
+L Mechanical:MountingHole_Pad H104
+U 1 1 61D4D7C3
+P 10000 4900
+F 0 "H104" H 10100 4903 50  0000 L CNN
+F 1 "~" H 10100 4858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO14580_Pad" H 10000 4900 50  0001 C CNN
+F 3 "~" H 10000 4900 50  0001 C CNN
+	1    10000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D4D7C9
+P 10000 5100
+F 0 "#PWR?" H 10000 4850 50  0001 C CNN
+F 1 "GND" H 10005 4927 50  0000 C CNN
+F 2 "" H 10000 5100 50  0001 C CNN
+F 3 "" H 10000 5100 50  0001 C CNN
+	1    10000 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5000 10000 5100
+$EndSCHEMATC
