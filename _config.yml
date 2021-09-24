@@ -1,0 +1,10 @@
+theme: jekyll-theme-minimal
+
+title: An ESP-01S based LED backlight
+description: During a sleepless night the idea of ESP-01S based LED backlight was born. The backlight consist of 16 LED pixels controled by an ESP-01S.
+logo: https://github.com/eurovibes/blinkenlights/raw/master/images/blinkenlights.png
+show_downloads: true
+
+github:
+  zip_url: downloads/fabrication.zip
+  tar_url: downloads/fabrication.tar.gz
