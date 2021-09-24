@@ -11,7 +11,7 @@ on:
       - '.github/workflows/main.yml'
   pull_request:
     paths:
-      - '*.sch'
+      - '*.kicad_sch'
       - '*.kicad_pcb'
       - '*.kibot.yaml'
       - '.github/workflows/main.yml'
@@ -30,7 +30,7 @@ jobs:
         # optional - prefix to output defined in config
         dir: 'Fabrication'
         # optional - schematic file
-        schema: 'blinkenlights.sch'
+        schema: 'blinkenlights.kicad_sch'
         # optional - PCB design file
         board: 'blinkenlights.kicad_pcb'
         verbose: 1
