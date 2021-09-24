@@ -1,0 +1,26 @@
+Row,Referencias,Parte,Valor,P/N,Fabricante,Cod. Digi-Key,Footprint,Descripción,Quantity Per PCB
+1,C101 C102 C201 C202 C203 C204 C205 C206 C207 C208 C209 C210 C211 C212 C213 C214 C215 C216,C,22 µF,,,,CP_EIA-3528-21_Kemet-B,,18
+2,D201 D202 D203 D204 D205 D206 D207 D208 D209 D210 D211 D212 D213 D214 D215 D216,WS2813,WS2813,,,,LED_WS2812_PLCC6_5.0x5.0mm_P1.6mm,,16
+3,H101 H102 H103 H104,MountingHole_Pad,~,,,,MountingHole_4.3mm_M4_ISO14580_Pad,,4
+4,J101 J102,Conn_02x04_Odd_Even,ESP-01S,,,,PinSocket_2x04_P2.54mm_Vertical,,2
+5,J104,Conn_01x02,PWR,,,,TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree,,1
+6,J103,Conn_01x03,serial,,,,PinHeader_1x03_P2.54mm_Vertical,,1
+7,R201 R202 R203 R204 R205 R206 R207 R208 R209 R210 R211 R212 R213 R214 R215 R216,R,150 Ω,,,,R_0402_1005Metric,,16
+8,U101,AZ1117-3.3,AZ1117-3.3,,,,SOT-223-3_TabPin2,,1
+
+
+
+
+
+Project info:
+Schematic:,blinkenlights
+Variant:,default
+Revision:,v0.1
+Date:,2021-09-24
+KiCad Version:,5.1.9+dfsg1-1~bpo10+1
+Statistics:
+Component Groups:,8
+Component Count:,59
+Fitted Components:,59
+Number of PCBs:,1
+Total Components:,59
